@@ -2,7 +2,7 @@
 header('Access-Control-Allow-Origin:*');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 $apiKey = "AIzaSyCNg-Y92fYqTaL-RFzgwX8Hp7LTpTlEdbk";
-$registrationIDs = array('$_POST["registrationId"]');
+$registrationIDs = array($_POST["registrationId"]);
 $message = "testing Process";
 $url = 'https://android.googleapis.com/gcm/send';
 $fields = array(
