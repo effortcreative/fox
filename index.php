@@ -1,4 +1,3 @@
-
 <?php
 header('Access-Control-Allow-Origin:*');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
@@ -25,6 +24,6 @@ curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode($fields) );
 $result = curl_exec($ch);
 if(curl_errno($ch)){ echo 'Curl error: ' . curl_error($ch); }
 curl_close($ch);
-echo $_POST["registrationId"];
+echo $result;
 
 ?>
